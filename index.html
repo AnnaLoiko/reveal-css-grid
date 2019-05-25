@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<p>CSS Grid Layout</p>
+					<img src="img/001.jpg" alt="">
+					<p class="comment">
+						In the first case, in design it is easy to see grid from rows and columns.
+						In the other, grid clearly not visible in design.
+					</p>
+				</section>
+				
+				<section>
+					<img src="img/002.jpg" alt="">
+					<p class="comment">
+						In code we can see a lot of squares that form a grid - css grid layout
+					</p>
+				</section>
+				
+				<section>
+					<p>CSS Grid Layout like modern old good table layout</p>
+					<img src="img/003.jpg" alt="">
+					<p class="comment">
+						Tables layouts instead css grid layouts contain redundant code, not semantic, weigh a lot and inflexible, allows to create only a strict design.
+					</p>
+				</section>
+				
+				<section>
+					<p>The order of items in the HTML markup<br> is irrelevant in design</p>
+					<img src="img/004.jpg" alt="">
+					<p class="comment">
+						Grid Layout lets us properly separate the order of elements in the source, in markup, from their visual presentation.
+					</p>
+				</section>
+
+				<section>
+					<p>What about difference css grid with flexbox?</p>
+					<img src="img/005.jpg" alt="">
+					<p class="comment">Grid is more flexible tool that operates with cells in two dimensions - along rows and along columns at the same time</p>
+				</section>
+
+				<section>
+					<p>Browser support</p>
+					<img src="img/006.jpg" alt="">
+					<p class="comment">Almost all major desktop and mobile browsers - Chrome, Firefox, Opera, MS Edge - can boast CSS support for Grid Layout</p>
+				</section>
+
+				<section>
+					<p>CSS Grid module by default</p>
+					<img src="img/007.jpg" alt="">
+					<p class="comment">By default, CSS Grid module will draw a table in one column without spaces between the cells.</p>
+				</section>
+
+				<section>
+					<p>Grid tracks - rows and columns</p>
+					<section>
+						<img src="img/008.jpg" alt="">
+					</section>
+
+					<section>
+						<p>Grid tracks - rows and columns</p>
+						<img src="img/009.jpg" alt="">
+						<p class="comment">
+							In huge grid-tables with a large number of cells, the notation repeat() and automation self-draw new cells will often help out.
+						</p>
+					</section>
+					<section>
+						<p>Track's sizes</p>
+						<img src="img/010.jpg" alt="">
+						<p class="comment">
+							We can create a grid with fixed or flexible sizes –pixels, % and fr unit (fraction) and minmax() function. And combine all variations.
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<p>Grid Gaps</p>
+					<img src="img/011.jpg" alt="">
+					<p class="comment">
+						Grid-gap combine with other css methods (Margins, padding) are contribute to the visible spaces between rows and columns.
+					</p>
+				</section>
+
+				<section>
+					<p>Grid Lines and cells</p>
+					<img src="img/012.jpg" alt="">
+					<p class="comment"></p>
+				</section>
+
+				<section>
+					<p>Grid areas</p>
+					<img src="img/013.jpg" alt="">
+					<p class="comment">Merging several cells is similar like in tables. Area is defined by lines, between which this is located.</p>
+				</section>
+
+				<section>
+					<p>Z-index in css grid layouts</p>
+					<img src="img/014.jpg" alt="">
+					<p class="comment">Unlike HTML tables in CSS Grid, cells and areas are located not only in the plane - they can also be located in a “stack”, like layers in Photoshop.</p>
+				</section>
+
+				<section>
+					<p>Aligning Grid Items (Box Alignment)</p>
+					<p class="comment">justify-items and justify-self align items along the row axis</p>
+					<p class="comment">align-items and align-self align items along the column axis</p>
+					<ul>
+						<li>auto</li>
+						<li>normal</li>
+						<li>start</li>
+						<li>end</li>
+						<li>center</li>
+						<li>stretch</li>
+						<li>baseline</li>
+						<li>first baseline</li>
+						<li>last baseline</li>
+					</ul>
+				</section>
+
+				<section>
+					<p class="comment">Intuitive clarity, conciseness, automation of CSS Grid really make creating interfaces easier.</p>
+					<p>good luck</p>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
